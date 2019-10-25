@@ -11,7 +11,7 @@ module.exports = {
     extensions: ['.js']
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: [path.join(__dirname, 'dist'), path.join(__dirname, 'assets')],
     hot: true
   },
   module: {
@@ -27,6 +27,12 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
+        ]
+      },
+      {
+        test: /\.(csv|tsv)$/,
+        use: [
+          'csv-loader'
         ]
       }
     ]
@@ -45,6 +51,7 @@ module.exports = {
   ],
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   }
 }
