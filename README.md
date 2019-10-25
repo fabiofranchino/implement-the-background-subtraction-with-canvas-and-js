@@ -1,18 +1,19 @@
 # Webpack based webapp starterkit
 
-This is a webpack based empty project with a configuration that suits my common needs for simple web project or experiments.
+This is a webpack-based empty project with a configuration that suits my common needs for simple web project or experiments.
 
+More information and code snippets [here](https://fabiofranchino.com/blog/webpack-based-starterkit-for-quick-web-explorations).
 
-## Instruction
+## Instructions
 
-### Setup
+### Initial setup
 
     npm install
 
-### Development session
+### Start a development session
 
     npm start
 
-### Build
+### Create the final build
 
     npm build
