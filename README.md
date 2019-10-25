@@ -17,3 +17,12 @@ More information and code snippets [here](https://fabiofranchino.com/blog/webpac
 ### Create the final build
 
     npm build
+
+### Clone
+
+You can clone this repo, work on it, create a new Github repository and change the remote URL to push on the new one, such as:
+
+```shell
+git remote set-url origin git@github.com:yourusername/your-new-repository.git
+```
+
