@@ -18,7 +18,7 @@ function draw (img) {
   document.body.appendChild(canvas)
 
   const ctx = canvas.getContext('2d')
-  ctx.filter = 'blur(1px)'
+  ctx.filter = 'blur(4px)'
   ctx.drawImage(img, 0, 0, w, h)
   return ctx.getImageData(0, 0, w, h)
 }
